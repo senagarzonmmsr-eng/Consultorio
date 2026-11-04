@@ -1,0 +1,259 @@
+/* Propiedades o estilos para el tamaño de los elementos */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dar un efecto más lento al momento de redireccionar el curso a un sitio de la página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Establecer formato de fuente a la class titulo_contenedor*/
+*titulo_contenedor{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagen {
+    /* Para dar un efecto visual de fondo */
+    background-image:linear-gradient(120deg, rgb(175, 194, 235) 0%, rgba(190, 233, 233, 0.466) 100%), url("../Imagenes/Ilustracion_Header.jpg");
+    width: 100%; height: 650px;  background-repeat: no-repeat;
+    /* 
+    width: para el alto
+    height: para el ancho
+    background-repeat: para que la imagen no se repita
+     */
+    background-size: cover; /* Para cubrir con la imagen toda el área del elemento*/
+    background-position: center; /* para centrar el elemento en el área */
+    background-attachment: fixed; /* La imagen queda fija dentro de la pantalla */
+    position: relative; /* Para que la posición no sea fija con el desplazamiento */
+    overflow: hidden; /* Para recortar el contenido  */
+}
+
+.textos-imagen {
+    height: 500px;
+    color:rgb(7, 41, 65);
+    display: flex; /* para que se visualicen en línea*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos-imagen h1 {
+    font-size: 60px;
+}
+
+.textos-imagen p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.textos-imagen a {
+    display: inline-block; /* Para que el elemento quede en línea de bloque*/
+    text-decoration: none;
+    padding: 15px 35px;
+    background: rgb(red, green, blue);
+    border-radius: 8px;
+    color:blanchedalmond;
+}
+
+.onda-imagen {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.contenedor_consultorio, .contenedor_informacion{
+    width: 90%;
+    max-width: 10000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+
+.contenedor_informacion {
+    padding: 80px 0;
+}
+
+.titulo {
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo_contenedor {
+    text-align: center;
+}
+
+/* Distribuir los elementos de forma uniforme*/
+.contenedor_consultorio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_consultorio img {
+    width: 48%;
+}
+
+.contenedor_consultorio .contenedor-textos-inicio {
+    width: 40%;
+}
+
+.parrafo_contenedor {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.informacionA {
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: blue;
+}
+
+.informacion{
+    background: rgb(red, green, blue);
+    color: rgb(72, 72, 151);
+}
+ 
+.contenido-tarjeta_contenedor {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; /* Distribuir los elementos de igual forma*/
+    flex-wrap: wrap; /* Todos los elementos permanezcan en la misma línea*/
+}
+
+.tarjeta {
+    width: 30%; /*Para el ancho*/
+    text-align: center; /* Centrar el texto */
+    height: 300x; /* para el alto */
+    box-shadow: 0 0 3px rgb(0,0, 0, .5); /* Para configurar un efecto de sombra*/
+    transform: scale(1); /* Para establecer un efecto de transformación, para ampliar el tamaño del elemento */
+    transition: transforms 0.6s;
+}
+
+.tarjeta:hover { /* para cambiar el estilo al momento de pasar el cursor */
+    box-shadow: 0 0 8px rgb(0,0, 0, .5); /* Para el efecto de sombra en el contorno del elemento*/
+    transform: scale(1.03);
+    cursor: pointer; /* se establece el tipode cursos que se va a visualizar */
+}
+
+.tarjeta i{
+    margin: 30px 0 20px 0;
+    color: rgb (25, 143, 143);
+    font-size: 50px;
+}
+
+.tarjeta p {
+    font-weight: 300; /*Para el ancho del elemento */
+    font-size: 15px; /*para el tamaño*/
+    margin-bottom: 10px;
+}
+
+.galeria_servicios {
+    background: #f2f2f2;
+}
+
+.galeria_contenedor {
+    width: 100%; /* para el alto del elemento*/
+    display: flex; /* Para que el elemento se tome en línea*/
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* distribuye los elementos de forma proporcional */
+    overflow: hidden; /*para eliminar o quitar los bordes que sobresalgan de la sección*/
+}
+ 
+.galeria_contenedor img {
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: opx opx 3px 0px rgb (0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.contenedor-informacionA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.contenedor-informacionA img {
+    width: 48%;
+}
+
+.contenedor-informacionA .contenedor-textos-inicio {
+    width: 40%;
+}
+
+footer {
+    background: #9cecd2;
+    color: #229599;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input {
+    background: transparent;
+    border: 0;
+    color: rgb(38, 41, 199);
+    outline: none;
+    border: 1px solid #229599;
+    padding: 20px 10px;
+}
+
+.input::placeholder {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input [type="text"],
+input [type="tel"],
+input [type="email"] {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.boton {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+input [type="submit"] {
+    width: 220px;
+    text-align: center;
+    padding: 14px 0;
+}
+
+input [type="submit"]:hover {
+    cursor:pointer;
+    color: aquamarine;
+    background: #229599;
+
+}
+
+
+
+
